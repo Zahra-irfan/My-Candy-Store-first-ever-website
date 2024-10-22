@@ -2,26 +2,208 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 2px 3px rgb(9, 3, 0);
+  color: rgb(249, 211, 40);  
+margin: 0;
+border: 1px brown;
+margin-top: 20px;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-nen-dong-tinh-yeu.gif');
+  background-size: cover;
+  margin: 0; /* Ensure no margin on body */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.pointsBG {
+   /* Keep elements stacked */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: fit-content; /* Full viewport height */
+  width: 30%; /* Full width */
+  max-width: 800px;  /* Center horizontally */
+margin-left: 1px;
+position: top;
+margin-top: 10%;
+box-sizing: content-box;
+background-image: url('https://i.pinimg.com/originals/b4/58/1d/b4581df9e47ce538d21555c94f75da95.gif');
+background-size: cover;
+
+border-radius: 17px;
+border-width: 2px;
+border-color: black;
 }
+
+.candy-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.candy-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+h6{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: right;
+color: rgb(19, 80, 224);
+text-decoration-line: underline;
+text-emphasis-color: rgb(32, 95, 254);
+text-decoration-color: rgb(13, 71, 217);
+margin-top: 10px;
+margin-right: 19px;
+box-shadow: 10px;
+outline-width: 10px;
+outline-color: black;}
+p{
+  color: rgb(250, 3, 69);
+  text-shadow: 0px 0px 3px rgb(252, 252, 252);
+}
+h5{
+  color: rgb(246, 187, 187);
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center; /* Vertically aligns the image with the text */
+  gap: 20px; /* Space between text and image */
+}
+
+.points {
+  flex: 1; /* Makes the text take up more space */
+}
+
+.side-image {
+  max-width: 300px; /* Adjust the size of the image */
+  height: auto; /* Keeps the aspect ratio */
+  border-radius: 10px; /* Optional: to make the image look nicer */
+}
+.form {
+  width: 70%;
+  box-shadow: 2px 2px 5px #b31640;
+  border-radius: 19px;
+  border: 2px solid #8d0527;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+form {
+  padding: 10px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: none; /* Box shadow value fixed */
+}
+
+label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  margin: 9px 0;
+  display: block;
+}
+
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  box-shadow: 0 2px 2px #b31640;
+  border: 1px solid black;
+  width: 70%;
+}
+
+.formBody {
+  margin: 30px; /* Added unit */
+}
+legend{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+  color: #8e0f31;
+  text-shadow: #cd7676 0 0 2px;
+}
+/* Customize scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 30px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track (the background of the scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a10c34; /* Scrollbar color */
+  border-radius: 10px; /* Rounded scrollbar edges */
+  border: 2px solid #f1f1f1; /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #eb3666; /* Color when hovering over the scrollbar */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: #b31640 #f1f1f1; /* Thumb color and track color */
+}
+button{
+  background-color: #a80c36; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove the default border */
+  padding: 12px 25px; /* Padding for a bigger button */
+  font-size: 16px; /* Text size */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Cursor becomes pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
+  margin-right: auto;
+  display: block;
+  margin-left: 130px;
+  text-align: center;
+}
+
+button:hover{
+  background-color: #b31640; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarges the button when hovered */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+button:active{
+  background-color: #6b0c25; /* Darker color when the button is clicked */
+  transform: scale(0.98); /* Slightly reduce size on click for a "pressed" effect */
+}
+
+.proceed{
+  background-color: #c50a3f; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove the default border */
+  padding: 12px 25px; /* Padding for a bigger button */
+  font-size: 16px; /* Text size */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Cursor becomes pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a 3D effect */
+  margin-left: auto;
+  display: block;
+  margin-right: 130px;
+  text-align: center;
+}
+.proceed:hover{
+  background-color: #de7294; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarges the button when hovered */
+  box-shadow: 0 8px 20px rgba(4, 4, 4, 0.3); /* Increases shadow on hover */
+}
+
+.proceed:active{
+  background-color: #660b19; /* Darker color when the button is clicked */
+  transform: scale(0.98); /* Slightly reduce size on click for a "pressed" effect */
+}
+
+
+
+
+
+  
